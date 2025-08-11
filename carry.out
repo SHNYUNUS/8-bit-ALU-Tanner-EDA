@@ -1,0 +1,114 @@
+* T-Spice 6.02 Simulation	Sun Jun 06 18:17:18 2010	D:\KUDRET\çalýþmalar\vlsý\layout\proje\carry.spc  (CAZM)
+* Command line: tspice -o D:\KUDRET\çalýþmalar\vlsý\layout\proje\carry.out D:\KUDRET\çalýþmalar\vlsý\layout\proje\carry.spc 
+* T-Spice Win32 6.02.20000302.11:47:10
+* Operating System: Windows NT/95
+
+*SEDIT: Alter blocks = 0
+
+* Device and node counts:
+*             MOSFETs - 10                MOSFET geometries - 10      
+*                BJTs - 0                             JFETs - 0       
+*             MESFETs - 0                            Diodes - 0       
+*          Capacitors - 0                         Resistors - 0       
+*           Inductors - 0                  Mutual inductors - 0       
+*  Transmission lines - 0        Coupled transmission lines - 0       
+*     Voltage sources - 4                   Current sources - 0       
+*                VCVS - 0                              VCCS - 0       
+*                CCVS - 0                              CCCS - 0       
+*    V-control switch - 0                  I-control switch - 0       
+*       Macro devices - 0        Functional model instances - 0       
+*         Subcircuits - 0              Subcircuit instances - 0       
+*   Independent nodes - 7                    Boundary nodes - 5       
+*         Total nodes - 12      
+
+
+*SEDIT: Alter=0
+*SEDIT: Analysis types DCOP 1 ACMODEL 1 AC 0 TRANSIENT 1 TRANSFER 0 NOISE 0 
+
+* BEGIN NON-GRAPHICAL DATA
+
+DC ANALYSIS
+v(10) =   3.1178e+000
+v(Cout) =   1.6205e-007
+v(3) =   5.4016e-008
+v(4) =   3.2626e+000
+v(6) =   1.5778e-001
+v(12) =   3.2770e+000
+v(7) =   8.1025e-008
+v(Cin) =   3.3000e+000
+v(B) =   3.3000e+000
+v(A) =   3.3000e+000
+v(Vdd) =   3.3000e+000
+i(Vbes) =  -3.4580e-010
+i(Vgiris1) =   0.0000e+000
+i(Vgiris2) =   0.0000e+000
+i(Vcin) =   0.0000e+000
+
+* END NON-GRAPHICAL DATA
+
+* BEGIN NON-GRAPHICAL DATA
+
+AC SMALL-SIGNAL MODELS
+             M1           M2           M3           M4           M5          
+MODEL        PMOS         PMOS         PMOS         PMOS         PMOS        
+TYPE         PMOS         PMOS         PMOS         PMOS         PMOS        
+ID           -3.44e-010   -1.45e-010    2.85e-011    1.45e-010    2.23e-010  
+VGS           2.30e-002    0.00e+000    3.74e-002    3.74e-002    3.30e+000  
+VDS          -3.28e+000   -3.74e-002    1.43e-002    3.74e-002    3.26e+000  
+VBS          -1.59e-001   -1.82e-001   -1.45e-001   -1.45e-001    3.12e+000  
+VTH          -4.18e-001   -4.12e-001   -4.19e-001   -4.12e-001   -4.22e-001  
+VDSAT         3.53e-002    3.52e-002    3.53e-002    3.52e-002    3.54e-002  
+RS            0.00e+000    0.00e+000    0.00e+000    0.00e+000    0.00e+000  
+RD            0.00e+000    0.00e+000    0.00e+000    0.00e+000    0.00e+000  
+GM            7.89e-009    3.21e-009   -6.53e-010   -3.21e-009   -5.59e-009  
+GDS           5.13e-011    3.89e-009    2.81e-009    7.87e-009    7.11e-009  
+GMB           2.10e-009    7.75e-010   -1.74e-010   -7.75e-010   -1.49e-009  
+GBD           1.00e-014    6.53e-011    6.53e-011    1.13e-009    6.53e-011  
+GBS           6.53e-011    1.13e-009    6.53e-011    6.53e-011    1.00e-014  
+CGS           5.76e-015    5.78e-015    3.62e-015    3.62e-015    3.62e-015  
+CGD           3.62e-015    3.62e-015    5.76e-015    5.78e-015    5.73e-015  
+CGB           2.94e-015    2.90e-015    2.94e-015    2.90e-015    2.97e-015  
+CBD           2.95e-015    5.37e-015    3.80e-016    4.85e-015    8.62e-015  
+CBS           3.85e-016    4.85e-015    5.37e-015    1.07e-014    2.95e-015  
+
+             M6           M7           M8           M9           M10         
+MODEL        NMOS         NMOS         NMOS         NMOS         NMOS        
+TYPE         NMOS         NMOS         NMOS         NMOS         NMOS        
+ID           -1.44e-010    9.61e-011   -1.44e-010   -9.61e-011    1.92e-010  
+VGS           3.30e+000    3.30e+000    3.30e+000    3.30e+000    3.30e+000  
+VDS          -8.10e-008    5.40e-008   -8.10e-008   -5.40e-008    1.08e-007  
+VBS           1.58e-001    1.58e-001    1.58e-001    1.58e-001    1.58e-001  
+VTH           4.37e-001    4.37e-001    4.37e-001    4.37e-001    4.37e-001  
+VDSAT         1.64e+000    1.64e+000    1.64e+000    1.64e+000    1.64e+000  
+RS            0.00e+000    0.00e+000    0.00e+000    0.00e+000    0.00e+000  
+RD            0.00e+000    0.00e+000    0.00e+000    0.00e+000    0.00e+000  
+GM            6.76e-012   -4.51e-012    6.76e-012    4.51e-012   -9.01e-012  
+GDS           1.78e-003    1.78e-003    1.78e-003    1.78e-003    1.78e-003  
+GMB          -1.06e-011    7.06e-012   -1.06e-011   -7.06e-012    1.41e-011  
+GBD           6.53e-011    6.53e-011    6.53e-011    6.53e-011    6.53e-011  
+GBS           6.53e-011    6.53e-011    6.53e-011    6.53e-011    6.53e-011  
+CGS           4.42e-015    4.67e-015    4.42e-015    4.42e-015    4.67e-015  
+CGD           4.67e-015    4.42e-015    4.67e-015    4.67e-015    4.42e-015  
+CGB           1.40e-017    1.40e-017    1.40e-017    1.40e-017    1.40e-017  
+CBD          -1.25e-015    5.35e-015    1.55e-015   -1.01e-016    5.57e-015  
+CBS           5.57e-015   -1.01e-016    4.43e-015    7.69e-015   -3.30e-016  
+
+* END NON-GRAPHICAL DATA
+
+*WEDIT: .tran   1e-009   1e-009
+TRANSIENT ANALYSIS
+Time<s>         v(Cout)<V>    v(Cin)<V>      v(B)<V>      v(A)<V>
+   0.0000e+000  1.6205e-007  3.3000e+000  3.3000e+000  3.3000e+000
+   1.0000e-012  1.6205e-007  3.3000e+000  3.3000e+000  3.3000e+000
+   9.0100e-010  1.6205e-007  3.3000e+000  3.3000e+000  3.3000e+000
+   1.0000e-009  1.6205e-007  3.3000e+000  3.3000e+000  3.3000e+000
+
+* Parsing                      0.00 seconds
+* Setup                        0.00 seconds
+* DC operating point           0.01 seconds
+* Transient Analysis           0.00 seconds
+* -----------------------------------------
+* Total                        0.01 seconds
+
+
+* End of T-Spice output file
